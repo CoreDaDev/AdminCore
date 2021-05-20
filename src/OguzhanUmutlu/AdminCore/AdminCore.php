@@ -11,7 +11,7 @@ use OguzhanUmutlu\AdminCore\commands\TempMuteCommand;
 use OguzhanUmutlu\AdminCore\commands\UnBanCommand;
 use OguzhanUmutlu\AdminCore\commands\UnIpBanCommand;
 use OguzhanUmutlu\AdminCore\commands\UnMuteCommand;
-use pocketmine\command\defaults\KickCommand;
+use OguzhanUmutlu\AdminCore\commands\KickCommand;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
