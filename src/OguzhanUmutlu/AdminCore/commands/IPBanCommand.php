@@ -59,7 +59,7 @@ class IPBanCommand extends BaseCommand {
         $ban->reload();
         $sender->sendMessage(str_replace(
             ["{line}", "{staff}", "{reason}", "{player}"],
-            ["\n", $sender->getName(), $reason, $player ? $player->getName() : $ip],
+            ["\n", $sender->getName(), $reason, $ip],
             $this->translate("ipban.success")
         ));
     }
