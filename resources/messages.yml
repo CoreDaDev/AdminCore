@@ -1,0 +1,116 @@
+---
+kick:
+  name: kick
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /kick <player> (reason)"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} kicked by {staff} for {reason}."
+  kick-message: "§cYou are kicked from server.{line}§eStaff: §b{staff}{line}§eReason: §b{reason}"
+  success: "§a{player} has been kick from server for {reason}."
+ban:
+  name: ban
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /ban <player> (reason)"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} got banned by {staff} for {reason}."
+  kick-message: "§cYou were banned from server.{line}§eStaff: §b{staff}{line}§eReason: §b{reason}"
+  success: "§a{player} has been banned from server for {reason}."
+ipban:
+  name: ipban
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /ipban <player/ip> <time: m = minutes, h = hours, d = days> (reason)"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} got IP banned by {staff} for {reason}."
+  kick-message: "§cYou were IP banned from server.{line}§eStaff: §b{staff}{line}§eReason: §b{reason}"
+  success: "§a{player} has been IP banned from server for {reason}."
+tempban:
+  name: tempban
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /tempban <player> <time: m = minutes, h = hours, d = days - Example: 10d> (reason)"
+  invalid-time: "§cValid times: m = minutes, h = hours, d = days, Example: 10d"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} got temp-banned by {staff} for {reason} and expires after {time}."
+  kick-message: "§cYou were temp-banned from server.{line}§eExpires at: §b{time}{line}§eStaff: §b{staff}{line}§eReason: §b{reason}"
+  success: "§a{player} has been banned from server for {reason} and expires after {time}."
+tempipban:
+  name: tempipban
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /tempipban <player/ip> <time: m = minutes, h = hours, d = days - Example: 10d> (reason)"
+  invalid-time: "§cValid times: m = minutes, h = hours, d = days, Example: 10d"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} got IP banned by {staff} for {reason} and expires after {time}."
+  kick-message: "§cYou were IP banned from server.{line}§eExpires at: §b{time}{line}§eStaff: §b{staff}{line}§eReason: §b{reason}"
+  success: "§a{player} has been banned from server for {reason} and expires after {time}."
+unban:
+  name: unban
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /unban <player>"
+  not-found: "§cPlayer not found."
+  not-banned: "§cPlayer is not banned."
+  broadcast:
+    enabled: true
+    message: "§e{player} got unbanned by {staff}."
+  success: "§a{player} has been unbanned from server."
+unipban:
+  name: unipban
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /unipban <ip>"
+  not-found: "§cPlayer not found."
+  not-banned: "§cPlayer is not banned."
+  broadcast:
+    enabled: false
+    # ^ not recommended because of the IP
+    message: "§e{ip} got unbanned by {staff}."
+  success: "§a{ip} has been unbanned from server."
+mute:
+  name: mute
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /mute <player> (reason)"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} has been muted by {staff} for {reason}."
+  success: "§a{player} has been muted from server for {reason}."
+tempmute:
+  name: tempmute
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /tempmute <player> <time: m = minutes, h = hours, d = days - Example: 10d> (reason)"
+  not-found: "§cPlayer not found."
+  broadcast:
+    enabled: true
+    message: "§e{player} has been muted by {staff} for {reason} and expires after {time}."
+  success: "§a{player} has been muted from server for {reason} and expires after {time}."
+unmute:
+  name: unmute
+  enabled: true
+  no-perm: "§cYou don't have enough permission."
+  usage: "§cUsage: /unmute <player>"
+  not-found: "§cPlayer not found."
+  not-muted: "§cPlayer is not muted."
+  broadcast:
+    enabled: true
+    message: "§e{player} has been unmuted by {staff}."
+  success: "§a{player} has been unmuted from server."
+
+
+mute-message: "§cYou are muted!"
+...

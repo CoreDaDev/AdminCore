@@ -1,0 +1,22 @@
+---
+name: AdminCore
+description: "Powerful admin core for PocketMine-MP"
+version: 1.0.0
+api: 3.0.0
+main: OguzhanUmutlu\AdminCore\AdminCore
+
+permissions:
+  admincore:
+    description: "Main AdminCore permission."
+    default: op
+    children:
+      admincore.mute:
+        description: "AdminCore /mute command permission"
+        default: op
+      admincore.tempmute:
+        description: "AdminCore /tempmute command permission"
+        default: op
+      admincore.unmute:
+        description: "AdminCore /unmute command permission"
+        default: op
+...
