@@ -22,7 +22,7 @@ class IPBanCommand extends BaseCommand {
             return;
         }
         $player = AdminCore::getInstance()->getServer()->getOfflinePlayer($args[0]);
-        $ip = $player ? $player->getAddress() : $args[0];
+        $ip = $player->getAddress();
         $reason = isset($args[1]) ? implode(" ", array_slice($args, 1)) : "None";
         foreach($sender->getServer()->getOnlinePlayers() as $pl){
             if($ip === $pl->getAddress()){
