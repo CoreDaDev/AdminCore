@@ -22,7 +22,7 @@ class TempIpBanCommand extends BaseCommand {
             return;
         }
         $player = AdminCore::getInstance()->getServer()->getOfflinePlayer($args[0]);
-        $ip = $player ? $player->getAddress() : $args[0];
+        $ip = $player->getAddress();
         $reason = isset($args[2]) ? implode(" ", array_slice($args, 2)) : "None";
         switch(substr($args[1], strlen($args[1])-1)) {
             case "m":
@@ -76,7 +76,7 @@ class TempIpBanCommand extends BaseCommand {
         $ban->reload();
         $sender->sendMessage(str_replace(
             ["{line}", "{staff}", "{reason}", "{player}", "{time}"],
-            ["\n", $sender->getName(), $reason, $player ? $player->getName() : $ip, $time],
+            ["\n", $sender->getName(), $reason, $ip, $time],
             $this->translate("tempipban.success")
         ));
     }
