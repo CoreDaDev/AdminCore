@@ -41,10 +41,6 @@ class TempBanCommand extends BaseCommand {
                 $sender->sendMessage($this->translate("tempban.invalid-time"));
                 return;
         }
-        if(is_null($player)) {
-            $sender->sendMessage($this->translate("tempban.not-found"));
-            return;
-        }
         if($player instanceof Player)$player->kick(str_replace(
             ["{line}", "{staff}", "{reason}", "{player}", "{time}"],
             ["\n", $sender->getName(), $reason, $player->getName(), $time],

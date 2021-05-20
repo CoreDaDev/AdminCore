@@ -22,7 +22,7 @@ class KickCommand extends BaseCommand {
             $sender->sendMessage($this->translate("kick.usage"));
             return;
         }
-        $player = AdminCore::getInstance()->getServer()->getOfflinePlayer($args[0]);
+        $player = AdminCore::getInstance()->getServer()->getPlayer($args[0]);
         $reason = isset($args[1]) ? implode(" ", array_slice($args, 1)) : "None";
         if(is_null($player)) {
             $sender->sendMessage($this->translate("kick.not-found"));

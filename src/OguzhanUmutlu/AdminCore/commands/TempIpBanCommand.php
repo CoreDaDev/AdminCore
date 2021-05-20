@@ -41,10 +41,6 @@ class TempIpBanCommand extends BaseCommand {
                 $sender->sendMessage($this->translate("tempipban.invalid-time"));
                 return;
         }
-        if(is_null($player)) {
-            $sender->sendMessage($this->translate("tempipban.not-found"));
-            return;
-        }
         foreach($sender->getServer()->getOnlinePlayers() as $pl){
             if($ip === $pl->getAddress()) {
                 $pl->kick(str_replace(

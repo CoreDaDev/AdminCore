@@ -24,10 +24,6 @@ class BanCommand extends BaseCommand {
         }
         $player = AdminCore::getInstance()->getServer()->getOfflinePlayer($args[0]);
         $reason = isset($args[1]) ? implode(" ", array_slice($args, 1)) : "None";
-        if(is_null($player)) {
-            $sender->sendMessage($this->translate("ban.not-found"));
-            return;
-        }
         if($player instanceof Player)$player->kick(str_replace(
             ["{line}", "{staff}", "{reason}", "{player}"],
             ["\n", $sender->getName(), $reason, $player->getName()],

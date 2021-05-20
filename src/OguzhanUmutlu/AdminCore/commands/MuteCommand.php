@@ -23,10 +23,6 @@ class MuteCommand extends BaseCommand {
         }
         $player = AdminCore::getInstance()->getServer()->getOfflinePlayer($args[0]);
         $reason = isset($args[1]) ? implode(" ", array_slice($args, 1)) : "None";
-        if(is_null($player)) {
-            $sender->sendMessage($this->translate("mute.not-found"));
-            return;
-        }
         $mute = new Config(AdminCore::getInstance()->getDataFolder()."mutes.yml");
         $muteA = $mute->getAll();
         $muteA[$player->getName()] = ["player" => $player->getName(), "reason" => $reason, "staff" => $sender->getName(), "expiresAt" => -1];

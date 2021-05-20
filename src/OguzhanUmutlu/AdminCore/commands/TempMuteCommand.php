@@ -40,10 +40,6 @@ class TempMuteCommand extends BaseCommand {
                 $sender->sendMessage($this->translate("tempban.invalid-time"));
                 return;
         }
-        if(is_null($player)) {
-            $sender->sendMessage($this->translate("tempmute.not-found"));
-            return;
-        }
         $mute = new Config(AdminCore::getInstance()->getDataFolder()."mutes.yml");
         $muteA = $mute->getAll();
         $muteA[$player->getName()] = ["player" => $player->getName(), "reason" => $reason, "staff" => $sender->getName(), "expiresAt" => time()+$timeA];

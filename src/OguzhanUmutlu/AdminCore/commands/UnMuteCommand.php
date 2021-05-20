@@ -22,10 +22,6 @@ class UnMuteCommand extends BaseCommand {
             return;
         }
         $player = AdminCore::getInstance()->getServer()->getOfflinePlayer($args[0]);
-        if(is_null($player)) {
-            $sender->sendMessage($this->translate("unmute.not-found"));
-            return;
-        }
         $mute = new Config(AdminCore::getInstance()->getDataFolder()."mutes.yml");
         if(!isset($mute->getAll()[$player->getName()])) {
             $sender->sendMessage($this->translate("unmute.not-muted"));

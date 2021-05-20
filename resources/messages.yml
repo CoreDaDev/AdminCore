@@ -15,7 +15,6 @@ ban:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /ban <player> (reason)"
-  not-found: "§cPlayer not found."
   broadcast:
     enabled: true
     message: "§e{player} got banned by {staff} for {reason}."
@@ -26,7 +25,6 @@ ipban:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /ipban <player/ip> <time: m = minutes, h = hours, d = days> (reason)"
-  not-found: "§cPlayer not found."
   broadcast:
     enabled: true
     message: "§e{player} got IP banned by {staff} for {reason}."
@@ -38,7 +36,6 @@ tempban:
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /tempban <player> <time: m = minutes, h = hours, d = days - Example: 10d> (reason)"
   invalid-time: "§cValid times: m = minutes, h = hours, d = days, Example: 10d"
-  not-found: "§cPlayer not found."
   broadcast:
     enabled: true
     message: "§e{player} got temp-banned by {staff} for {reason} and expires after {time}."
@@ -50,7 +47,6 @@ tempipban:
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /tempipban <player/ip> <time: m = minutes, h = hours, d = days - Example: 10d> (reason)"
   invalid-time: "§cValid times: m = minutes, h = hours, d = days, Example: 10d"
-  not-found: "§cPlayer not found."
   broadcast:
     enabled: true
     message: "§e{player} got IP banned by {staff} for {reason} and expires after {time}."
@@ -61,7 +57,6 @@ unban:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /unban <player>"
-  not-found: "§cPlayer not found."
   not-banned: "§cPlayer is not banned."
   broadcast:
     enabled: true
@@ -72,7 +67,6 @@ unipban:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /unipban <ip>"
-  not-found: "§cPlayer not found."
   not-banned: "§cPlayer is not banned."
   broadcast:
     enabled: false
@@ -84,7 +78,6 @@ mute:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /mute <player> (reason)"
-  not-found: "§cPlayer not found."
   broadcast:
     enabled: true
     message: "§e{player} has been muted by {staff} for {reason}."
@@ -94,7 +87,6 @@ tempmute:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /tempmute <player> <time: m = minutes, h = hours, d = days - Example: 10d> (reason)"
-  not-found: "§cPlayer not found."
   broadcast:
     enabled: true
     message: "§e{player} has been muted by {staff} for {reason} and expires after {time}."
@@ -104,7 +96,6 @@ unmute:
   enabled: true
   no-perm: "§cYou don't have enough permission."
   usage: "§cUsage: /unmute <player>"
-  not-found: "§cPlayer not found."
   not-muted: "§cPlayer is not muted."
   broadcast:
     enabled: true
