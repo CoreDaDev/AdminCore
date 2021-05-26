@@ -6,9 +6,9 @@
 
 Powerful admin core for PocketMine-MP.
 
-This plugin lets your staffs to manage server easily!
+This plugin changes and adds commands that they can be used for punishments.
 
-There are commands that they are useful.
+You can check Commands page for a list of commands.
 
 Easy to configure and use.
 
